@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Digital Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lms-container">
+        <h1>Materi & Kuis: Digital Marketing</h1>
+        
+        <div id="materi-section">
+            <h2>Materi Ringkas Digital Marketing</h2>
+            <p>Berikut adalah ringkasan materi berdasarkan buku "DIGITAL MARKETING (TINJAUAN KONSEPTUAL)". Silakan pelajari sebelum memulai kuis.</p>
+            
+            <div class="materi-bab">
+                <h3>Bab 1: Strategi Marketing</h3>
+                [cite_start]<p>Strategi marketing adalah serangkaian tindakan untuk mencapai tujuan pemasaran, meliputi segmentasi pasar, penentuan posisi (positioning), dan bauran pemasaran (marketing mix) yang terdiri dari Produk, Harga (Price), Tempat (Place), dan Promosi. [cite: 112, 144, 161, 195]</p>
+            </div>
+
+            <div class="materi-bab">
+                <h3>Bab 2 & 3: Konsep Digital Marketing vs Tradisional</h3>
+                [cite_start]<p>Digital marketing adalah pemasaran yang menggunakan media digital seperti website, media sosial, dan email. [cite: 327, 339] [cite_start]Berbeda dengan marketing tradisional (brosur, koran) [cite: 434][cite_start], digital marketing lebih terukur, jangkauannya luas, dan seringkali lebih hemat biaya. [cite: 349, 351, 357, 359]</p>
+            </div>
+
+             <div class="materi-bab">
+                <h3>Bab 6 & 7: SEO dan SEM</h3>
+                <ul>
+                    [cite_start]<li><strong>SEO (Search Engine Optimization)</strong>: Upaya optimasi website agar mendapat peringkat tinggi di hasil pencarian organik (tidak berbayar). [cite: 1077] [cite_start]Terdiri dari SEO On-Page, Off-Page, dan Technical. [cite: 1098]</li>
+                    [cite_start]<li><strong>SEM (Search Engine Marketing)</strong>: Upaya pemasaran di mesin pencari, termasuk SEO dan iklan berbayar (Paid Search) seperti Google Ads. [cite: 1350, 1354]</li>
+                </ul>
+            </div>
+
+            <div class="materi-bab">
+                <h3>Bab 8 & 12: eWOM dan Social Media Marketing</h3>
+                [cite_start]<p><strong>Electronic Word of Mouth (eWOM)</strong> adalah penyebaran informasi produk dari konsumen ke konsumen melalui media internet, seperti ulasan online. [cite: 1476, 1493] [cite_start]<strong>Social Media Marketing</strong> adalah proses menarik perhatian audiens melalui platform media sosial seperti Instagram, Facebook, dan TikTok untuk membangun brand dan meningkatkan penjualan. [cite: 2031, 2068]</p>
+            </div>
+
+            <div class="materi-bab">
+                <h3>Bab 13: Tools Digital Marketing</h3>
+                <p>Tools adalah aplikasi atau sarana yang mendukung aktivitas pemasaran digital. [cite_start]Contohnya termasuk <strong>Canva</strong> untuk desain, <strong>Hootsuite</strong> untuk manajemen media sosial, dan <strong>Google Analytics</strong> untuk analisis performa website. [cite: 2160, 2188, 2214, 2287]</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="identitas-section">
+            <h2>Lengkapi Identitas Anda</h2>
+            <form id="identitas-form">
+                <label for="namaSiswa">Nama Lengkap:</label>
+                <input type="text" id="namaSiswa" required>
+                <label for="kelasSiswa">Kelas:</label>
+                <input type="text" id="kelasSiswa" required>
+                <button type="button" onclick="mulaiKuis()">Mulai Kuis</button>
+            </form>
+        </div>
+
+        <div id="kuis-section" style="display:none;">
+            <h2>Kuis Digital Marketing</h2>
+            <form id="kuis-form"></form>
+            <button id="submit-btn" onclick="submitKuis()">Selesai & Lihat Nilai</button>
+        </div>
+
+        <div id="hasil-section" style="display:none;">
+            <h2>Hasil Kuis Anda</h2>
+            <p id="nama-hasil"></p>
+            <p id="skor-hasil"></p>
+            <p id="keterangan-hasil"></p>
+            <div id="link-sertifikat" style="display:none;">
+                <p>Selamat! Anda berhak mendapatkan sertifikat.</p>
+                <button onclick="tampilkanSertifikat()">Lihat Sertifikat</button>
+            </div>
+        </div>
+
+        <div id="sertifikat-container" style="display:none;">
+            <div id="sertifikat">
+                <div class="sertifikat-header">
+                    <h1>Sertifikat Kelulusan</h1>
+                    <h2>Pelatihan Dasar Digital Marketing</h2>
+                </div>
+                <div class="sertifikat-body">
+                    <p>Diberikan kepada:</p>
+                    <h2 id="nama-sertifikat"></h2>
+                    <p>Telah berhasil menyelesaikan kuis Digital Marketing dengan predikat <strong>LULUS</strong>.</p>
+                </div>
+                <div class="sertifikat-footer">
+                    <p>Nomor: <span id="nomor-sertifikat"></span></p>
+                    <p>Tanggal: <span id="tanggal-sertifikat"></span></p>
+                </div>
+            </div>
+            <button onclick="window.print()">Cetak Sertifikat</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
